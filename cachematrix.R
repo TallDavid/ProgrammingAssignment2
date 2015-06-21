@@ -2,18 +2,19 @@
 ## of a matrix rather than compute it repeatedly. This program will create a pair of functions that 
 ## cache the inverse of a matrix.
 
-## NOTE: Computing the inverse of a square matrix can be done with the solve function in R. For example, if X is a square invertible matrix, then solve(X) returns its inverse.
+## NOTE: Computing the inverse of a square matrix can be done with the solve function in R. 
+## For example, if X is a square invertible matrix, then solve(X) returns its inverse.
 ## For this assignment it is assumed that the matrix supplied is always invertible.
 
 ## solve(a, b, ...)
 ## Arguments:
 ## a: a square numeric or complex matrix containing the coefficients of the linear system. 
-##  Logical matrices are coerced to numeric.
+##    Logical matrices are coerced to numeric.
 ## b: a numeric or complex vector or matrix giving the right-hand side(s) of the linear system. 
-##  If missing, b is taken to be an identity matrix and solve will return the inverse of a.
+##    If missing, b is taken to be an identity matrix and solve will return the inverse of a.
 
-## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.
-## makeCacheMatrix creates a special "matrix", which is really a list containing a function to
+## makeCacheMatrix: This function creates a special "matrix" object that can cache its inverse.  
+## i.e. it creates a special "matrix", which is really a list containing a function to:
 ##
 ## 1) set the value of the matrix
 ## 2) get the value of the matrix
